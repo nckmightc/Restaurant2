@@ -1,0 +1,102 @@
+:root {
+  background-color: #d9d9d9;
+}
+
+header {
+    margin: auto;
+    text-align: center;
+}
+.nav-container {
+    display: flex;
+    background-color: #798c7c;
+    margin: 0%;
+}
+
+.homebtn,
+.orderbtn,
+.aboutbtn {
+    background-color: #798c7c;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.orderbtn{
+  color: rgb(126, 78, 71);
+}
+
+  .foodItem {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+/* Media Queries */
+
+@media (max-width: 360px) {
+  .nav-container {
+    display: flex;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .menu {
+    text-align: center;
+    margin-right: 10px;
+  }
+
+  .foodItem {
+    text-align: left;
+  }
+  
+  ul{
+    padding-left: 5px;
+  }
+
+  p {
+    margin: 5px;
+  }
+  
+  .swveggie:hover {
+    color: transparent;
+    background-image: url("../img/southwest.jpg");
+    border-radius: 40px;
+  }
+
+  .bgouda:hover {
+    color: transparent;
+    background-image: url("../img/bacongouda.jpg");
+    border-radius: 40px;
+  }
+
+  .sausage:hover {
+    color: transparent;
+    background-image: url("../img/bacongouda.jpg");
+    border-radius: 40px;
+  }
+
+  .breakfastname,
+  .lunchname {
+    margin-right: 15px;
+  }
+
+  .longlunchname {
+    margin-right: 5px;
+  }
+
+  .coffee {
+    margin-right: 35px;
+  }
+
+  .tea {
+    margin-right: 55px;
+  }
+
+  .soda {
+    margin-right: 45px;
+  }
+}
