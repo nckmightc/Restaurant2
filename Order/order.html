@@ -19,29 +19,31 @@
             <h3 id="breakfast">Breakfast</h3>
                 <ul>
                 <li class="foodItem">
-                    <input type="checkbox">
+                    <input onclick="selectFoodItem(this.id)" type="checkbox" id="swVeggieWrap" value="Southwest Veggie Wrap">
                     <p class="breakfastname">Southwest <br>
                         Veggie <br>
                         Wrap</p>
                     <p class="swveggie">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p class="price" id="price" value="$2.00">$2.00</p>
                 </li>
 
                 <li class="foodItem">
-                    <input type="checkbox">
+                    <input onclick="selectFoodItem(this.id)" type="checkbox" id="bgouda" value="Bacon, Gouda & Egg Sandwich">
                     <p class="breakfastname">Bacon, <br>
                         Gouda & <br>
                         Egg <br>
                         Sandwich</p>
                     <p class="bgouda">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p class="price" id="price" value="$3.00">$3.00</p>
                 </li>
 
                 <li class="foodItem">
-                    <input type="checkbox">
+                    <input onclick="selectFoodItem(this.id)" type="checkbox" id="scegg" value="Sausage, Cheddar & Egg Sandwich">
                     <p class="breakfastname">Sausage, <br>
                         Cheddar & Egg <br>
                         Sandwich</p>
                     <p class="sausage">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                    
+                    <p class="price" id="price" value="$2.00">$2.00</p>                  
                 </li>
             
               </ul>
@@ -50,7 +52,7 @@
             <ul>
 
                 <li class="foodItem">
-                    <input type="checkbox">
+                    <input onclick="selectFoodItem(this.id)" type="checkbox" id="dsbs" value="Double-Smoked Bacon Sandwich">
                     <p class="lunchname">Chicken &<br>
                     Double-<br>
                     Smoked <br>
@@ -60,7 +62,7 @@
                 </li>
 
                 <li class="foodItem">
-                    <input type="checkbox">
+                    <input onclick="selectFoodItem(this.id)" type="checkbox" id="tms" value="Tomato & Mozzarella Sandwich">
                     <p class="longlunchname">Tomato & <br>
                         Mozzarella <br>
                         Sandwich</p>
@@ -68,7 +70,7 @@
                 </li>
 
                 <li class="foodItem">
-                    <input type="checkbox">
+                    <input onclick="selectFoodItem(this.id)" type="checkbox" id="gcs" value="Grilled Cheese Sandwich">
                     <p class="lunchname">Grilled <br>
                         Cheese <br>
                         Sandwich</p>
@@ -81,19 +83,19 @@
                 <ul>
 
                 <li class="foodItem">
-                    <input type="checkbox">
+                    <input onclick="selectFoodItem(this.id)" type="checkbox" id="coffee" value="Coffee">
                     <p class="coffee">Coffee</p>
                     <p>Reprehenderit in voluptate velit esse cillum dolore.</p>
                 </li>
 
                 <li class="foodItem">
-                    <input type="checkbox">
+                    <input onclick="selectFoodItem(this.id)" type="checkbox" id="tea" value="Tea">
                     <p class="tea">Tea</p>
                     <p>Consectetur adipiscing elit.</p>
                 </li>
 
                 <li class="foodItem">
-                    <input type="checkbox">
+                    <input onclick="selectFoodItem(this.id)" type="checkbox" id="soda" value="Soda">
                     <p class="soda">Soda</p>
                     <p>Aliquip ex ea commodo consequat.</p>
                     
@@ -115,10 +117,11 @@
         </form>
     </div>
 
-
+    <ul class="total" id="total"></ul>
     
     <footer>
 
     </footer>
+    <script src="order-script.js"></script>
 </body>
 </html>
