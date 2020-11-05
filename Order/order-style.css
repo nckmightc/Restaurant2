@@ -76,7 +76,43 @@ header {
 
   .sausage:hover {
     color: transparent;
-    background-image: url("../img/bacongouda.jpg");
+    background-image: url("../img/sausage.jpg");
+    border-radius: 40px;
+  }
+
+  .dsbacon:hover {
+    color: transparent;
+    background-image: url("../img/dsbacon.jpg");
+    border-radius: 40px;
+  }
+
+  .tomato:hover {
+    color: transparent;
+    background-image: url("../img/tomato.jpg");
+    border-radius: 40px;
+  }
+
+  .grilledc:hover {
+    color: transparent;
+    background-image: url("../img/cheese.jpg");
+    border-radius: 40px;
+  }
+
+  ._coffee:hover {
+    color: transparent;
+    background-image: url("../img/coffee.jpg");
+    border-radius: 40px;
+  }
+
+  ._tea:hover {
+    color: transparent;
+    background-image: url("../img/tea.jpg");
+    border-radius: 40px;
+  }
+
+  ._soda:hover {
+    color: transparent;
+    background-image: url("../img/soda.jpg");
     border-radius: 40px;
   }
 
@@ -84,6 +120,20 @@ header {
   .lunchname {
     margin-right: 15px;
   }
+
+  ._soda:hover,
+  ._tea:hover,
+  ._coffee:hover,
+  .grilledc:hover,
+  .tomato:hover,
+  .dsbacon:hover,
+  .sausage:hover,
+  .bgouda:hover,
+  .swveggie:hover {
+    background-repeat: no-repeat;
+    background-color: #1f3933;
+  }
+
 
   .longlunchname {
     margin-right: 5px;
@@ -95,6 +145,13 @@ header {
 
   .tea {
     margin-right: 55px;
+
+  }
+
+  ._tea {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 11px;
   }
 
   .soda {
