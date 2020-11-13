@@ -158,3 +158,28 @@ header {
     margin-right: 45px;
   }
 }
+
+@media (min-width: 1080px) {
+  .flexbox {
+    display: flex;
+  }
+
+  .menu {
+    flex-direction: row;
+    display: flex;
+  }
+
+  .breakfastname,
+  .lunchname,
+  .longlunchname,
+  .coffee,
+  .tea,
+  .soda {
+    margin-right: 10px;
+  }
+
+  .breakfast {
+    color: white;
+    background-image: url("../img/verticalBreakfast.jpg");
+  }
+}

@@ -8,81 +8,85 @@
 </head>
 <body>
     <header>
+        <div>
+            <h1>Café</h1>
+        </div>
         <div class="nav-container">
-                <h1 class="homebtn">Home</h1>
                 <h1 class="orderbtn">Order</h1>
-                <h1 class="aboutbtn">About</h1>
+                <h1 class="aboutbtn"><a href="../about/about.html">About</a></h1>
         </div>
     </header>
 
+
+   <div class="flexbox"> 
     <div class="menu">
-            <h3 id="breakfast">Breakfast</h3>
+            <h3 id="breakfast" class="breakfast">Breakfast</h3>
                 <ul>
-                <li class="foodItem">
-                    <input onclick="selectFoodItem(this.id)" type="checkbox" id="swVeggieWrap" value="Southwest Veggie Wrap">
-                    <p class="breakfastname">Southwest <br>
-                        Veggie <br>
-                        Wrap</p>
-                    <p class="swveggie">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <p class="price" id="price" value="$2.00">$2.00</p>
-                </li>
-
-                <li class="foodItem">
-                    <input onclick="selectFoodItem(this.id)" type="checkbox" id="bgouda" value="Bacon, Gouda & Egg Sandwich">
-                    <p class="breakfastname">Bacon, <br>
-                        Gouda & <br>
-                        Egg <br>
-                        Sandwich</p>
-                    <p class="bgouda">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <p class="price" id="price" value="$3.00">$3.00</p>
-                </li>
-
-                <li class="foodItem">
-                    <input onclick="selectFoodItem(this.id)" type="checkbox" id="scegg" value="Sausage, Cheddar & Egg Sandwich">
-                    <p class="breakfastname">Sausage, <br>
-                        Cheddar & Egg <br>
-                        Sandwich</p>
-                    <p class="sausage">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                    <p class="price" id="price" value="$2.00">$2.00</p>                  
-                </li>
-            
-              </ul>
-
-            <h3 id="lunch">Lunch</h3>
-            <ul>
-
-                <li class="foodItem">
-                    <input onclick="selectFoodItem(this.id)" type="checkbox" id="dsbs" value="Double-Smoked Bacon Sandwich">
-                    <p class="lunchname">Chicken &<br>
-                    Double-<br>
-                    Smoked <br>
-                    Bacon <br>
-                    Sandwich</p>
-                    <p class="dsbacon">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <p class="price" id="price" value="$3.00">$3.00</p>
-                </li>
-
-                <li class="foodItem">
-                    <input onclick="selectFoodItem(this.id)" type="checkbox" id="tms" value="Tomato & Mozzarella Sandwich">
-                    <p class="longlunchname">Tomato & <br>
-                        Mozzarella <br>
-                        Sandwich</p>
-                        <p class="tomato">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <p class="price" id="price" value="$3.00">$3.00</p>
-                </li>
-
-                <li class="foodItem">
-                    <input onclick="selectFoodItem(this.id)" type="checkbox" id="gcs" value="Grilled Cheese Sandwich">
-                    <p class="lunchname">Grilled <br>
-                        Cheese <br>
-                        Sandwich</p>
-                        <p class="grilledc">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>                    
+                    <li class="foodItem">
+                        <input onclick="selectFoodItem(this.id)" type="checkbox" id="swVeggieWrap" value="Southwest Veggie Wrap">
+                        <p class="breakfastname">Southwest <br>
+                            Veggie <br>
+                            Wrap</p>
+                        <p class="swveggie">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         <p class="price" id="price" value="$2.00">$2.00</p>
-                </li>
-            
+                    </li>
+
+                    <li class="foodItem">
+                        <input onclick="selectFoodItem(this.id)" type="checkbox" id="bgouda" value="Bacon, Gouda & Egg Sandwich">
+                        <p class="breakfastname">Bacon, <br>
+                            Gouda & <br>
+                            Egg <br>
+                            Sandwich</p>
+                        <p class="bgouda">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p class="price" id="price" value="$3.00">$3.00</p>
+                    </li>
+
+                    <li class="foodItem">
+                        <input onclick="selectFoodItem(this.id)" type="checkbox" id="scegg" value="Sausage, Cheddar & Egg Sandwich">
+                        <p class="breakfastname">Sausage, <br>
+                            Cheddar & Egg <br>
+                            Sandwich</p>
+                        <p class="sausage">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <p class="price" id="price" value="$2.00">$2.00</p>                  
+                    </li>
+                
               </ul>
 
-            <h3 id="drinks">Drinks</h3>
+            <h3 id="lunch" class="lunch">Lunch</h3>
+                <ul>
+
+                    <li class="foodItem">
+                        <input onclick="selectFoodItem(this.id)" type="checkbox" id="dsbs" value="Double-Smoked Bacon Sandwich">
+                        <p class="lunchname">Chicken &<br>
+                        Double-<br>
+                        Smoked <br>
+                        Bacon <br>
+                        Sandwich</p>
+                        <p class="dsbacon">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p class="price" id="price" value="$3.00">$3.00</p>
+                    </li>
+
+                    <li class="foodItem">
+                        <input onclick="selectFoodItem(this.id)" type="checkbox" id="tms" value="Tomato & Mozzarella Sandwich">
+                        <p class="longlunchname">Tomato & <br>
+                            Mozzarella <br>
+                            Sandwich</p>
+                            <p class="tomato">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p class="price" id="price" value="$3.00">$3.00</p>
+                    </li>
+
+                    <li class="foodItem">
+                        <input onclick="selectFoodItem(this.id)" type="checkbox" id="gcs" value="Grilled Cheese Sandwich">
+                        <p class="lunchname">Grilled <br>
+                            Cheese <br>
+                            Sandwich</p>
+                            <p class="grilledc">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>                    
+                            <p class="price" id="price" value="$2.00">$2.00</p>
+                    </li>
+                
+                </ul>
+
+            <h3 id="drinks" class="drinks">Drinks</h3>
                 <ul>
 
                 <li class="foodItem">
@@ -100,7 +104,7 @@
                 </li>
 
                 <li class="foodItem">
-                    <input onclick="selectFoodItem(this.id)" type="checkbox" id="soda" value="Soda">
+                    <input onclick="selectFoodItem(this.id), addTotal(price)" type="checkbox" id="soda" value="Soda">
                     <p class="soda">Soda</p>
                     <p class="_soda">Aliquip ex ea commodo consequat.</p>
                     <p class="price" id="price" value="$1.00">$1.00</p>                    
@@ -108,6 +112,7 @@
             
               </ul>
     </div>
+   </div>
 
     <div class="order">
         <h2>Your Order</h2>
