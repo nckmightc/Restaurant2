@@ -20,6 +20,7 @@
 
    <div class="flexbox"> 
     <div class="menu">
+        <div class="column">
             <h3 id="breakfast" class="breakfast">Breakfast</h3>
                 <ul>
                     <li class="foodItem">
@@ -51,7 +52,9 @@
                     </li>
                 
               </ul>
+            </div>
 
+            <div class="column">
             <h3 id="lunch" class="lunch">Lunch</h3>
                 <ul>
 
@@ -85,7 +88,9 @@
                     </li>
                 
                 </ul>
+            </div>
 
+            <div class="column">
             <h3 id="drinks" class="drinks">Drinks</h3>
                 <ul>
 
@@ -111,17 +116,93 @@
                 </li>
             
               </ul>
+            </div>
     </div>
    </div>
 
     <div class="order">
         <h2>Your Order</h2>
         <form>
+            <label for="cardnumber">Card Number</label><br>
+            <input type="number" id="cardnumber" name="cardnumber"><br>
+
+            <label for="expdate">Expiration Date</label><br>
+            <input type="date" id="expdate" name="expdate"><br>
+
+            <label for="securitycode">Security Code</label><br>
+            <input type="number" id="securitycode" name="securitycode"><br>
+
             <label for="firstname">First Name</label><br>
             <input type="text" id="firstname" name="firstname"><br>
 
             <label for="lastname">Last Name</label><br>
             <input type="text" id="lastname" name="lastname"><br>
+
+            <label for="address">Address</label><br>
+            <input type="text" id="address" name="address"><br>
+
+            <label for="city">City</label><br>
+            <input type="text" id="city" name="city"><br>
+
+            <label for="state">State</label><br>
+            <select id="state" name="state">
+                <option>Alabama</option>
+                <option>Alaska</option>
+                <option>Arizona</option>
+                <option>Arkansas</option>
+                <option>California</option>
+                <option>Colorado</option>
+                <option>Connecticut</option>
+                <option>Delaware</option>
+                <option>Florida</option>
+                <option>Georgia</option>
+                <option>Hawaii</option>
+                <option>Idaho</option>
+                <option>Illinois</option>
+                <option>Indiana</option>
+                <option>Iowa</option>
+                <option>Kansas</option>
+                <option>Kentucky</option>
+                <option>Louisiana</option>
+                <option>Maine</option>
+                <option>Maryland</option>
+                <option>Massachusetts</option>
+                <option>Michigan</option>
+                <option>Minnesota</option>
+                <option>Mississippi</option>
+                <option>Missouri</option>
+                <option>Montana</option>
+                <option>Nebraska</option>
+                <option>Nevada</option>
+                <option>New Hampshire</option>
+                <option>New Jersey</option>
+                <option>New Mexico</option>
+                <option>New York</option>
+                <option>North Carolina</option>
+                <option>North Dakota</option>
+                <option>Ohio</option>
+                <option>Oklahoma</option>
+                <option>Oregon</option>
+                <option>Pennsylvania</option>
+                <option>Rhode Island</option>
+                <option>South Carolina</option>
+                <option>South Dakota</option>
+                <option>Tennessee</option>
+                <option>Texas</option>
+                <option>Utah</option>
+                <option>Vermont</option>
+                <option>Virginia</option>
+                <option>Washington</option>
+                <option>West Virginia</option>
+                <option>Wisconsin</option>
+                <option>Wyoming</option>
+            </select><br>
+
+            <label for="city">Postal Code</label><br>
+            <input type="number" id="postalcode" name="postalcode"><br>
+
+            <label for="country">Country</label><br>
+            <input type="text" id="country" name="country"><br>
 
             <input type="submit" value="Place Order">
         </form>
