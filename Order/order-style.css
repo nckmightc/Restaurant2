@@ -1,26 +1,30 @@
 :root {
   background-color: #d9d9d9;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
-    margin: auto;
+    margin-left: 0;
+    margin-right: 0;
     text-align: center;
 }
+
 .nav-container {
     display: flex;
     background-color: #798c7c;
     margin: 0%;
+    border-radius: 35px;
 }
 
-.homebtn,
-.orderbtn,
-.aboutbtn {
-    background-color: #798c7c;
+.breakfastbtn,
+.lunchbtn,
+.drinkbtn {
     color: white;
     padding: 16px;
     font-size: 16px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    width: 25%;
 }
 
 .orderbtn{
@@ -33,10 +37,59 @@ header {
     align-items: center;
 }
 
+.submitbtn {
+  margin-bottom: 20px;
+}
+
+#cardnumber,
+#expdate,
+#securitycode,
+#firstname,
+#lastname,
+#address,
+#city,
+#state,
+#postalcode,
+#country {
+  background-color: #a0c6c9;
+}
+
 
 /* Media Queries */
 
-@media (max-width: 360px) {
+@media (max-width: 814px) {
+  header {
+    background-color: #d9d9d9;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+  .breakfast,
+  .lunch,
+  .drinks {
+    background-color: #a0c6c9;
+    width: 75%;
+    border-radius: 0px 20px 20px 0px;
+    color: white;
+  }
+  
+  .navbtn {
+    text-decoration-line: none;
+  }
+
+
+  a {
+    color: white;
+  }
+
   .nav-container {
     display: flex;
   }
@@ -157,9 +210,51 @@ header {
   .soda {
     margin-right: 45px;
   }
+
+  .totalcheck {
+    display: flex;
+    margin-right: 20px;
+    width: 35%;
+  }
+
+  .checkout {
+    position: absolute;
+    margin-right: 50%;
+    margin-left: 10px;
+  }
+
+  .total {
+    position: absolute;
+    margin-left: 55%;
+    margin-right: 20px;
+    list-style-type: none;
+  }
+
+  #expdate {
+    padding-right: 25px;
+  }
+
+  #state {
+    padding-right: 50px;
+  }
+
+  #country {
+    margin-bottom: 17px;
+  }
 }
 
-@media (min-width: 1080px) {
+@media (min-width: 815px) {
+
+  .breakfastbtn,
+  .lunchbtn,
+  .drinkbtn {
+    color: #798c7c;
+  }
+
+  .navbtn {
+    color: #798c7c;
+  }
+
   .flexbox {
     display: flex;
   }
@@ -178,10 +273,13 @@ header {
     margin-right: 10px;
   }
 
-  .breakfast {
+  .breakfast,
+  .lunch,
+  .drinks {
     color: white;
-    background-image: url("../img/verticalBreakfast.jpg");
+    background-color: #a0c6c9;
     text-align: center;
+
   }
 
   .lunch {
@@ -195,5 +293,38 @@ header {
   .column {
     width: 30%;
     margin: 0 auto;
+  }
+
+
+  #cardnumber,
+  #expdate,
+  #securitycode,
+  #firstname,
+  #lastname,
+  #address,
+  #city,
+  #state,
+  #postalcode,
+  #country {
+    width: 50%;
+    margin-right: 25%;
+    margin-left: 25%;
+    margin-bottom: 5px;
+  }
+
+  #expdate {
+    width: 50.2%;
+  }
+
+  #state {
+    width: 50.6%;
+  }
+
+  .submitbtn {
+    margin-left: 25%;
+  }
+
+  .total {
+    list-style-type: none;
   }
 }

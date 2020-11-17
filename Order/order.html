@@ -11,9 +11,11 @@
         <div>
             <h1>Café</h1>
         </div>
-        <div class="nav-container">
-                <h1 class="orderbtn">Order</h1>
-                <h1 class="aboutbtn"><a href="../about/about.html">About</a></h1>
+        <div id="navbar" class="nav-container">
+                <h1 class="breakfastbtn"><a class="navbtn" href="#breakfast">Breakfast</a></h1>
+                <h1 class="lunchbtn"><a class="navbtn" href="#lunch">Lunch</a></h1>
+                <h1 class="drinkbtn"><a class="navbtn" href="#drinks">Drinks</a></h1>
+
         </div>
     </header>
 
@@ -120,95 +122,85 @@
     </div>
    </div>
 
-    <div class="order">
-        <h2>Your Order</h2>
-        <form>
-            <label for="cardnumber">Card Number</label><br>
-            <input type="number" id="cardnumber" name="cardnumber"><br>
+   <div class="totalcheck">
+        <ul class="total" id="total"></ul>
 
-            <label for="expdate">Expiration Date</label><br>
-            <input type="date" id="expdate" name="expdate"><br>
+                <form class="checkout">
+                    <input placeholder="Card Number" type="number" id="cardnumber" name="cardnumber"><br>
 
-            <label for="securitycode">Security Code</label><br>
-            <input type="number" id="securitycode" name="securitycode"><br>
+                    <input placeholder="Epiration Date" type="date" id="expdate" name="expdate"><br>
 
-            <label for="firstname">First Name</label><br>
-            <input type="text" id="firstname" name="firstname"><br>
+                    <input placeholder="Security Code" type="number" id="securitycode" name="securitycode"><br>
 
-            <label for="lastname">Last Name</label><br>
-            <input type="text" id="lastname" name="lastname"><br>
+                    <input placeholder="First Name" type="text" id="firstname" name="firstname"><br>
 
-            <label for="address">Address</label><br>
-            <input type="text" id="address" name="address"><br>
+                    <input placeholder="Last Name" type="text" id="lastname" name="lastname"><br>
 
-            <label for="city">City</label><br>
-            <input type="text" id="city" name="city"><br>
+                    <input placeholder="Address" type="text" id="address" name="address"><br>
 
-            <label for="state">State</label><br>
-            <select id="state" name="state">
-                <option>Alabama</option>
-                <option>Alaska</option>
-                <option>Arizona</option>
-                <option>Arkansas</option>
-                <option>California</option>
-                <option>Colorado</option>
-                <option>Connecticut</option>
-                <option>Delaware</option>
-                <option>Florida</option>
-                <option>Georgia</option>
-                <option>Hawaii</option>
-                <option>Idaho</option>
-                <option>Illinois</option>
-                <option>Indiana</option>
-                <option>Iowa</option>
-                <option>Kansas</option>
-                <option>Kentucky</option>
-                <option>Louisiana</option>
-                <option>Maine</option>
-                <option>Maryland</option>
-                <option>Massachusetts</option>
-                <option>Michigan</option>
-                <option>Minnesota</option>
-                <option>Mississippi</option>
-                <option>Missouri</option>
-                <option>Montana</option>
-                <option>Nebraska</option>
-                <option>Nevada</option>
-                <option>New Hampshire</option>
-                <option>New Jersey</option>
-                <option>New Mexico</option>
-                <option>New York</option>
-                <option>North Carolina</option>
-                <option>North Dakota</option>
-                <option>Ohio</option>
-                <option>Oklahoma</option>
-                <option>Oregon</option>
-                <option>Pennsylvania</option>
-                <option>Rhode Island</option>
-                <option>South Carolina</option>
-                <option>South Dakota</option>
-                <option>Tennessee</option>
-                <option>Texas</option>
-                <option>Utah</option>
-                <option>Vermont</option>
-                <option>Virginia</option>
-                <option>Washington</option>
-                <option>West Virginia</option>
-                <option>Wisconsin</option>
-                <option>Wyoming</option>
-            </select><br>
+                    <input placeholder="City" type="text" id="city" name="city"><br>
 
-            <label for="city">Postal Code</label><br>
-            <input type="number" id="postalcode" name="postalcode"><br>
+                    <select id="state" name="state">
+                        <option>Alabama</option>
+                        <option>Alaska</option>
+                        <option>Arizona</option>
+                        <option>Arkansas</option>
+                        <option>California</option>
+                        <option>Colorado</option>
+                        <option>Connecticut</option>
+                        <option>Delaware</option>
+                        <option>Florida</option>
+                        <option>Georgia</option>
+                        <option>Hawaii</option>
+                        <option>Idaho</option>
+                        <option>Illinois</option>
+                        <option>Indiana</option>
+                        <option>Iowa</option>
+                        <option>Kansas</option>
+                        <option>Kentucky</option>
+                        <option>Louisiana</option>
+                        <option>Maine</option>
+                        <option>Maryland</option>
+                        <option>Massachusetts</option>
+                        <option>Michigan</option>
+                        <option>Minnesota</option>
+                        <option>Mississippi</option>
+                        <option>Missouri</option>
+                        <option>Montana</option>
+                        <option>Nebraska</option>
+                        <option>Nevada</option>
+                        <option>New Hampshire</option>
+                        <option>New Jersey</option>
+                        <option>New Mexico</option>
+                        <option>New York</option>
+                        <option>North Carolina</option>
+                        <option>North Dakota</option>
+                        <option>Ohio</option>
+                        <option>Oklahoma</option>
+                        <option>Oregon</option>
+                        <option>Pennsylvania</option>
+                        <option>Rhode Island</option>
+                        <option>South Carolina</option>
+                        <option>South Dakota</option>
+                        <option>Tennessee</option>
+                        <option>Texas</option>
+                        <option>Utah</option>
+                        <option>Vermont</option>
+                        <option>Virginia</option>
+                        <option>Washington</option>
+                        <option>West Virginia</option>
+                        <option>Wisconsin</option>
+                        <option>Wyoming</option>
+                    </select><br>
 
-            <label for="country">Country</label><br>
-            <input type="text" id="country" name="country"><br>
+                    <input placeholder="Postal Code" type="number" id="postalcode" name="postalcode"><br>
 
-            <input type="submit" value="Place Order">
-        </form>
-    </div>
+                    <input placeholder="Country" type="text" id="country" name="country"><br>
 
-    <ul class="total" id="total"></ul>
+                    <input class="submitbtn" type="submit" value="Place Order">
+                </form>
+   </div>
+    
     
     <footer>
 
