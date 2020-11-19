@@ -1,0 +1,9 @@
+# Restaurant2
+
+This is an online menu for a restaurant. For this project, I wanted the people using the website to be able to order food online.
+
+This project includes two media queries (one at max-width 814px and another at min width 815px).
+In mobile sizes, there is a sticky menu that can be used to quickly navigate to one of the sections of food.
+There is also a javascript function that populates and displays an array of items picked from the page.
+
+To run this project, open the order.html file in the order folder in a browser.
