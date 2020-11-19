@@ -1,6 +1,6 @@
 var foodItems = [];
 
-
+//This function creates items for the array above based on which checkbox is checked on the page. Those items are put into an unordered list with the 'total' class.
 function selectFoodItem (itemId) {
     var checkbox = document.getElementById(itemId);
     var list = document.getElementById('total');
@@ -9,18 +9,14 @@ function selectFoodItem (itemId) {
         list.innerHTML = "";
         foodItems.push(checkbox.value)
         console.log(foodItems)
-        // var list = document.createElement('ul');
         for (var i = 0; i < foodItems.length; i++) {
             var item = document.createElement('li');
             item.innerHTML = (foodItems[i]);
             console.log(item);
             list.appendChild(item);
-            // list.innerHTML = foodItems[i];
-            // document.body.appendChild(list);
-
         }
         return list;
-        
+        //The else statement removes array items if their associated checkbox is unchecked. It also removes the list item from the html.
     } else {
         list.innerHTML = "";
         var index = foodItems.indexOf(checkbox.value);
@@ -31,21 +27,8 @@ function selectFoodItem (itemId) {
             item.innerHTML = (foodItems[i]);
             console.log(item);
             list.appendChild(item);
-            // list.innerHTML = foodItems[i];
-            // document.body.appendChild(list);
         }
-        // item[i].parentNode.removeChild(item[i]);
         console.log(item)
-    }
-}
-
-var total = []
-
-function addTotal (classNames) {
-    var checkbox = document.getElementsByClassName(classNames);
-    if (checkbox.checked) {
-        total.push(checkbox.itemClass);
-        console.log(total);
     }
 }
 
